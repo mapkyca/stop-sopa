@@ -1,0 +1,8 @@
+ErrorDocument 503 /index.html
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !index\.html$
+RewriteRule .* - [R=503,L]
+
